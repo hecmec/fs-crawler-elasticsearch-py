@@ -1,0 +1,26 @@
+{
+  "fs": {
+    "url_test": "C:\\Projets\\elasticsearch-2.2.0\\jpe_testdata",
+    "url": "\\\\nastoe00\\BPATL-PARTAGE2\\05525",
+    "threads" :  20,
+    "update_rate": "30s",
+    "includes": [ "*.doc", "*.doc?", "*.xls", "*.xls?", "*.ppt", "*.ppt?", "*.txt", "*.pdf", "*.md" ],
+    "excludes": null,
+    "remove_deleted": true,
+    "store_source": false,
+    "indexed_chars": 2000
+  },
+  "elasticsearch": {
+    "nodes": [
+      {
+        "host": "127.0.0.1",
+        "port": 9200
+      }
+    ],
+    "index": "intranet",
+    "type": "file_resource",
+    "bulk_size": 10,
+    "flush_interval": "5s"
+  }
+
+}
